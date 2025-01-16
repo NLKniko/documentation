@@ -16,7 +16,7 @@ The first thing required is pairing the controller with the LoCoBot's NUC comput
 
 ![image info](https://docs.trossenrobotics.com/interbotix_xslocobots_docs/_images/ps4.jpg)
 
-### Command:
+### Commands:
 After successful pairment, you can use the controller to control the robot, e.g. the arm, the base and also the perception unit.  
 
 The command is: 
@@ -45,7 +45,7 @@ To understand how the joystick buttons map to controlling the robot, look at the
 
 ![image info](https://docs.trossenrobotics.com/interbotix_xslocobots_docs/_images/ps3.jpg)
 
-### Base Control Mode
+#### Base Control Mode
 |Button|Action|
 |:----- |:----- |
 |Left|stick Up/Down drive the base forward/backward between 0.7 to -0.7 m/s|
@@ -56,7 +56,7 @@ To understand how the joystick buttons map to controlling the robot, look at the
 |Right|stick Left/Right pan the RealSense camera Left/Right|
 |START/OPTIONS	|move the pan/tilt servo to '0' radians|
 
-### Arm Control Mode
+#### Arm Control Mode
 |Button|Action|
 |:----- |:----- |
 |START/OPTIONS	|move robot arm to its Home pose|
@@ -76,7 +76,7 @@ To understand how the joystick buttons map to controlling the robot, look at the
 |R1|if the arm has 6dof, this moves the end-effector in a negative direction along its own 'y' axis|
 |L1|if the arm has 6dof, this moves the end-effector in a positive direction along its own 'y' axis|
 
-### Both Modes
+#### Both Modes
 |Button|Action|
 |:----- |:----- |
 |D-pad Up	|increase the control loop rate in 1 Hz step increments (max of 40)|
