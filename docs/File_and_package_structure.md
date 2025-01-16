@@ -25,21 +25,17 @@ In this section we want to explain the structure of the packages which provided 
 |
 ├── interbotix_ros_rovers
 │   ├── examples
-│   │   ├── interbotix_xslocobot_joy
+│   │   ├── interbotix_xslocobot_joy (package for PS Controller)
 │   │   │   ├── config
 │   │   │   │   ├── modes_all.yaml
 │   │   │   │   └── modes_base.yaml
-│   │   │   ├── images
-│   │   │   │   ├── ps3.jpg
-│   │   │   │   ├── ps4.jpg
-│   │   │   │   └── xslocobot_joy_flowchart.png
 │   │   │   ├── launch
 │   │   │   │   └── xslocobot_joy.launch
 │   │   │   ├── scripts
 │   │   │   │   └── xslocobot_robot
 │   │   │   └── src
 │   │   │       └── xslocobot_joy.cpp
-│   │   ├── interbotix_xslocobot_landmark_nav
+│   │   ├── interbotix_xslocobot_landmark_nav (package for navigation using landmarks)
 │   │   │   ├── landmarks
 │   │   │   │   └── landmarks.yaml
 │   │   │   ├── launch
@@ -48,7 +44,7 @@ In this section we want to explain the structure of the packages which provided 
 │   │   │   ├── scripts
 │   │   │   │   └── nav_to_landmark
 │   │   │   └── setup.py
-│   │   ├── interbotix_xslocobot_moveit_interface
+│   │   ├── interbotix_xslocobot_moveit_interface (C++ interface for MoveIt Motion Planning)
 │   │   │   ├── config
 │   │   │   │   ├── locobot_px100.yaml
 │   │   │   │   ├── locobot_wx200.yaml
@@ -56,7 +52,7 @@ In this section we want to explain the structure of the packages which provided 
 │   │   │   │   └── modes_all.yaml
 │   │   │   └── launch
 │   │   │       └── xslocobot_moveit_interface.launch
-│   │   └── python_demos
+│   │   └── python_demos (demostration codes provided by Trossen Robotics)
 │   │       ├── auto_docking.py
 │   │       ├── bartender.py
 │   │       ├── combo_control.py
@@ -68,7 +64,7 @@ In this section we want to explain the structure of the packages which provided 
 │   │       ├── joint_pwm_control.py
 │   │       ├── move_base.py
 │   │       └── pan_tilt_control.py
-│   ├── interbotix_ros_xslocobots
+│   ├── interbotix_ros_xslocobots (This metapackage groups together the core ROS Packages for the Interbotix X-Series LoCoBots.)
 │   │   ├── examples
 │   │   │   ├── interbotix_xslocobot_joy
 │   │   │   │   ├── config
@@ -122,14 +118,14 @@ In this section we want to explain the structure of the packages which provided 
 │   │   │   └── launch
 │   │   │       ├── xslocobot_nav.launch
 │   │   │       └── xslocobot_nav_sim.launch
-│   │   ├── interbotix_xslocobot_perception
-│   │   │   ├── config
-│   │   │   │   └── filter_params.yaml
-│   │   │   ├── launch
-│   │   │   │   └── xslocobot_perception.launch
-│   │   │   └── scripts
-│   │   │       ├── pick_place_armtag.py
-│   │   │       └── pick_place_no_armtag.py
+│   │   └── interbotix_xslocobot_perception
+│   │       ├── config
+│   │       │   └── filter_params.yaml
+│   │       ├── launch
+│   │       │   └── xslocobot_perception.launch
+│   │       └── scripts
+│   │           ├── pick_place_armtag.py
+│   │           └── pick_place_no_armtag.py
 │   ├── interbotix_xslocobot_control
 │   │   ├── config
 │   │   │   ├── bridge.yaml
@@ -145,7 +141,7 @@ In this section we want to explain the structure of the packages which provided 
 │   │   │   └── xslocobot_python.launch
 │   │   └── scripts
 │   │       └── startup_bridge.sh
-│   ├── interbotix_xslocobot_descriptions
+│   ├── interbotix_xslocobot_descriptions (mesh, urdf and rviz files of robot model in Gazebo and Rviz)
 │   │   ├── launch
 │   │   │   ├── many_xslocobots.launch
 │   │   │   ├── remote_view.launch
@@ -233,7 +229,7 @@ In this section we want to explain the structure of the packages which provided 
 │   │       ├── locobot.urdf.xacro
 │   │       ├── pan_and_tilt.urdf.xacro
 │   │       └── plate.urdf.xacro
-│   ├── interbotix_xslocobot_gazebo
+│   ├── interbotix_xslocobot_gazebo (Gazebo Simulation Package, including world file)
 │   │   ├── config
 │   │   │   ├── locobot_gazebo_controllers.yaml
 │   │   │   ├── position_controllers
@@ -331,154 +327,16 @@ In this section we want to explain the structure of the packages which provided 
 |           └── xslocobot_ros_control.launch
 |
 └── interbotix_ros_toolboxes
-    ├── interbotix_common_toolbox
-    │   ├── interbotix_common_modules
-    │   │   ├── setup.py
-    │   │   └── src
-    │   │       └── interbotix_common_modules
-    │   │           ├── angle_manipulation.py
-    │   │           ├── geometry.py
-    │   │           └── __init__.py
-    │   ├── interbotix_landmark_modules
-    │   │   ├── landmarks
-    │   │   │   └── landmarks.yaml
-    │   │   ├── launch
-    │   │   │   ├── landmark.launch
-    │   │   │   ├── landmark_manager.launch
-    │   │   │   └── tf_map_to_landmark.launch
-    │   │   ├── scripts
-    │   │   │   ├── landmark_finder
-    │   │   │   ├── landmark_manager
-    │   │   │   └── tf_map_to_landmark
-    │   │   ├── setup.py
-    │   │   ├── src
-    │   │   │   └── interbotix_landmark_modules
-    │   │   │       ├── __init__.py
-    │   │   │       └── landmark.py
-    │   │   └── test
-    │   │       ├── test_landmark.py
-    │   │       └── test-landmark.test
-    │   ├── interbotix_moveit_interface
-    │   │   ├── include
-    │   │   │   └── interbotix_moveit_interface
-    │   │   │       └── moveit_interface_obj.h
-    │   │   ├── scripts
-    │   │   │   ├── moveit_interface_gui
-    │   │   │   └── moveit_python_interface
-    │   │   ├── src
-    │   │   │   ├── moveit_interface.cpp
-    │   │   │   └── moveit_interface_obj.cpp
-    │   │   └── srv
-    │   │       └── MoveItPlan.srv
-    │   └── interbotix_tf_tools
-    │       ├── config
-    │       │   └── tf_rebroadcaster.yaml
-    │       ├── include
-    │       │   └── interbotix_tf_tools
-    │       │       └── tf_rebroadcaster.h
-    │       ├── launch
-    │       │   └── tf_rebroadcaster.launch
-    │       └── src
-    │           └── tf_rebroadcaster.cpp
-    ├── interbotix_perception_toolbox
-    │   └── interbotix_perception_modules
-    │       ├── config
-    │       │   └── tags.yaml
-    │       ├── launch
-    │       │   ├── apriltag.launch
-    │       │   ├── armtag.launch
-    │       │   ├── pc_filter.launch
-    │       │   ├── picture_snapper.launch
-    │       │   └── static_transform_pub.launch
-    │       ├── msg
-    │       │   └── ClusterInfo.msg
-    │       ├── scripts
-    │       │   ├── armtag_tuner_gui
-    │       │   ├── picture_snapper
-    │       │   ├── pointcloud_tuner_gui
-    │       │   └── static_trans_pub
-    │       ├── setup.py
-    │       ├── src
-    │       │   ├── interbotix_perception_modules
-    │       │   │   ├── apriltag.py
-    │       │   │   ├── armtag.py
-    │       │   │   ├── __init__.py
-    │       │   │   └── pointcloud.py
-    │       │   ├── perception_pipeline.cpp
-    │       │   └── ui
-    │       │       ├── armtagtunergui.ui
-    │       │       └── pointcloudtunergui.ui
-    │       └── srv
-    │           ├── ClusterInfoArray.srv
-    │           ├── FilterParams.srv
-    │           └── SnapPicture.srv
-    ├── interbotix_rpi_toolbox
-    │   └── interbotix_rpi_modules
-    │       ├── msg
-    │       │   └── PixelCommands.msg
-    │       ├── scripts
-    │       │   └── rpi_pixels
-    │       ├── setup.py
-    │       └── src
-    │           └── interbotix_rpi_modules
-    │               ├── __init__.py
-    │               └── neopixels.py
-    ├── interbotix_ux_toolbox
-    │   ├── interbotix_ux_modules
-    │   │   ├── setup.py
-    │   │   └── src
-    │   │       └── interbotix_ux_modules
-    │   │           ├── arm.py
-    │   │           ├── core.py
-    │   │           ├── gripper.py
-    │   │           ├── __init__.py
-    │   │           └── mr_descriptions.py
-    │   └── interbotix_ux_ros_control
-    │       ├── include
-    │       │   └── interbotix_ux_ros_control
-    │       │       └── ux_hardware_interface_obj.h
-    │       └── src
-    │           ├── ux_hardware_interface.cpp
-    │           └── ux_hardware_interface_obj.cpp
-    ├── interbotix_xs_toolbox
-    │   ├── interbotix_xs_modules
-    │   │   ├── setup.py
-    │   │   └── src
-    │   │       └── interbotix_xs_modules
-    │   │           ├── arm.py
-    │   │           ├── core.py
-    │   │           ├── create3.py
-    │   │           ├── gripper.py
-    │   │           ├── hexapod.py
-    │   │           ├── __init__.py
-    │   │           ├── InterbotixArmXSInterface.m
-    │   │           ├── InterbotixGripperXSInterface.m
-    │   │           ├── InterbotixGripperXS.m
-    │   │           ├── InterbotixManipulatorXS.m
-    │   │           ├── InterbotixRobotXSCore.m
-    │   │           ├── kobuki.py
-    │   │           ├── locobot.py
-    │   │           ├── mr_descriptions.m
-    │   │           ├── mr_descriptions.py
-    │   │           └── turret.py
-    │   ├── interbotix_xs_ros_control
-    │   │   ├── include
-    │   │   │   └── interbotix_xs_ros_control
-    │   │   │       └── xs_hardware_interface_obj.h
-    │   │   └── src
-    │   │       ├── xs_hardware_interface.cpp
-    │   │       └── xs_hardware_interface_obj.cpp
-    │   └── interbotix_xs_rviz
-    │       ├── include
-    │       │   └── interbotix_xs_rviz
-    │       │       ├── interbotix_control_panel.hpp
-    │       │       └── xs_register_descriptions.h
-    │       └── src
-    │           ├── interbotix_control_panel.cpp
-    │           └── ui
-    │               └── interbotix_control_panel.ui
-    └── third_party_libraries
-        ├── ModernRobotics
-        └── README.md
+    ├── Toolbox Type X Landing Page: Contains support-level ROS packages for a given actuator/hardware platform.
+    │   ├── Support-Level Toolbox ROS Package 1
+    │   ├── Support-Level Toolbox ROS Package 2
+    │   └── Support-Level Toolbox ROS Package 3
+    │       ├── Robot Module Type 1
+    │       ├── Robot Module Type 2
+    │       └── Robot Module Type X
+    └── Support-Level Required Third Party Packages
+        ├── Third Party Package 1
+        ├── Third Party Package 2
+        └── Third Party Package X
 
 ```
