@@ -13,7 +13,7 @@ Interface.
     
         roslaunch interbotix_xslocobot_descriptions remote_view.launch
 3.  RViz should appear on your remote computer and display a virtual real-time representation of the robot!
-    ![image info](https://github.com/TrossenRobotics/interbotix_xslocobots_docs/raw/main/docs/ros_interface/ros1/images/rviz_remote.png)
+    ![image info](./images/rviz.png)
 4.  By default, all the DYNAMIXEL motors in the robot are torqued on so it will be very difficult to manually manipulate them. To torque off all the motors, execute the command below in another terminal (either via SSH or on your remote computer).
 
     warning

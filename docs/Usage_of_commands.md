@@ -14,7 +14,7 @@ The first thing required is pairing the controller with the LoCoBot's NUC comput
 7. To disconnect, hold down the **PS Button** for about 10 seconds until the LED turns off.
 8. To reconnect, just press the **PS Button** (no need to hold it down). After blinking white a few times, the LED should turn blue.
 
-![image info](https://docs.trossenrobotics.com/interbotix_xslocobots_docs/_images/ps4.jpg)
+![image info](./images/ps4.jpg)
 
 ### Commands:
 After successful pairment, you can use the controller to control the robot, e.g. the arm, the base and also the perception unit.  
@@ -43,7 +43,7 @@ A red error message might appear in the screen saying Couldn't open joystick for
 
 To understand how the joystick buttons map to controlling the robot, look at the diagram and table below:
 
-![image info](https://docs.trossenrobotics.com/interbotix_xslocobots_docs/_images/ps3.jpg)
+![image info](./images/ps3.jpg)
 
 #### Base Control Mode
 |Button|Action|

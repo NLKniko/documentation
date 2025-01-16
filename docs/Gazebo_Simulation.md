@@ -3,7 +3,7 @@
 This package contains the necessary config files to get any rover in our X-Series Interbotix LoCoBot Family simulated in Gazebo. Specifically, it contains the locobot_configs.gazebo file which allows the black texture of the robot to display properly (following this method) and starts various plugins. It also contains YAML files with tuned PID gains for the arm, gripper, and pan/tilt joints so that ros_control can control the robot effectively. This package can either be used in conjunction with MoveIt via the FollowJointTrajectory interface or by itself via the JointPositionController interface.
 
 ## Structure of this package
-![image info](https://docs.trossenrobotics.com/interbotix_xslocobots_docs/_images/xslocobot_gazebo_flowchart.png)
+![image info](./images/gazebo_flowchart.png)
 
 ## Usage
 
