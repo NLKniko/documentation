@@ -19,7 +19,10 @@ The first thing required is pairing the controller with the LoCoBot's NUC comput
 ### Command:
 After successful pairment, you can use the controller to control the robot, e.g. the arm, the base and also the perception unit.  
 
-The command is: `roslaunch interbotix_xslocobot_joy xslocobot_joy.launch robot_model:=locobot_wx250s`
+The command is: 
+```
+roslaunch interbotix_xslocobot_joy xslocobot_joy.launch robot_model:=locobot_wx250s
+```
 
 A red error message might appear in the screen saying Couldn't open joystick force feedback!. This is normal and will not affect the joystick operation. To further customize the launch file at run-time, look at the table below:
 
