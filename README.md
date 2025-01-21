@@ -3,6 +3,8 @@ This is the documentation file of LoCoBot WX250s from Trossen Robotics. For furt
 
 ## Sections
  ─ [Description of the robot](/docs/Description_of_the_robot.md)
+
+ ─ [Create 3 specification](/docs/create3.md)
  
  ─ [File and package structure](/docs/File_and_package_structure.md)
  
