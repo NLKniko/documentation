@@ -14,3 +14,15 @@ This is the documentation file of LoCoBot WX250s from Trossen Robotics. For furt
  
  ─ [Gazebo Simulation](/docs/Gazebo_Simulation.md)
 
+### Info for the build-in Intel® NUC mini computer
+```
+Hostname: locobot
+Password: locobot
+Spec of the computer:
+ ─ Intel® Core™ i5-10210U CPU
+ ─ Intel® UHD Graphics
+ ─ 16G memory, 500G Disk
+ ─ Ubuntu 20.04.5 LTS, X11 System
+ ─ ROS Noetic
+```
+**They also provide packages for ROS2 Galactic on their [website](https://docs.trossenrobotics.com/interbotix_xslocobots_docs/ros_interface/ros2/software_setup.html).**
